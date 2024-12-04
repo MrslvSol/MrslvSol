@@ -1,0 +1,390 @@
+html, body {
+  box-sizing: border-box; /* Для управления размерами элементов */
+  font-family: Arial, sans-serif; /* Общий шрифт для страницы */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3 {
+  color: #333;
+  text-align: center;
+  font-size: 0.875em;
+}
+
+/* Стили для контейнеров */
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+form {
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+form input {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  font-size: 0.75em;
+}
+
+form button {
+  background-color: #888;
+  color: white;
+  border: none;
+  padding: 5px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 0.75em;
+}
+
+form button:hover {
+  background-color: #888;
+}
+
+/* Ошибки для формы */
+.error {
+  color: rgb(63, 63, 63);
+  font-size: 0.625em;
+}
+
+/* Стили для Navbar */
+nav {
+  position: fixed; /* Фиксирует навигацию у нижней границы экрана */
+  bottom: 0; /* Устанавливает положение снизу */
+  width: 100%; /* Растягивает на всю ширину */
+  display: flex; /* Используем flexbox для выравнивания */
+  justify-content: center; /* Горизонтальное выравнивание по центру */
+  align-items: center; /* Вертикальное выравнивание по центру */
+  padding: 10px; /* Внутренние отступы для элемента */
+  color: #fff; /* Цвет текста */
+}
+
+nav a {
+  color: #f5f5f5; /* Цвет ссылок */
+  text-decoration: none; /* Убирает подчеркивание */
+  border-radius: 4px; /* Сглаженные углы */
+}
+
+nav a:hover {
+  color: #fff; /* Цвет текста при наведении */
+}
+
+
+/* Стили для страницы регистрации и логина */
+.login-register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-register-container .form-container {
+  width: 100%;
+  max-width: 200px;
+}
+
+h1.login-title {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="date"],
+textarea {
+  margin-bottom: 12px;
+}
+
+/* Стиль для кнопки выхода из профиля */
+.logout-btn {
+  background-color: #5e5e5e;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 0.75em;
+}
+
+.logout-btn:hover {
+  background-color: #888;
+}
+
+/* Стили для страницы EditProfile */
+.edit-profile-container {
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.edit-profile-container input {
+  margin-bottom: 7.5px;
+}
+
+.edit-profile-container button {
+  background-color: #888;
+  border: none;
+  padding: 5px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 2px;
+  color: white;
+  font-size: 0.75em;
+}
+
+.edit-profile-container button:hover {
+  background-color: #888;
+}
+
+
+/* Стиль для страницы Search */
+.search-container {
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.search-container input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 7.5px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  font-size: 0.75em;
+}
+
+.search-container button {
+  background-color: #888;
+  color: white;
+  border: none;
+  padding: 5px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 0.75em;
+}
+
+.search-container button:hover {
+  background-color: #888;
+}
+
+/* Стили для страницы Likes */
+.likes-container {
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.likes-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.likes-container li {
+  margin-bottom: 7.5px;
+}
+
+.likes-container li .like-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.likes-container li .like-item span {
+  font-weight: bold;
+}
+
+/* Стили для контента */
+.content {
+  padding: 20px;
+}
+
+/* Контейнер профиля */
+.user-profile {
+  display: flex; /* Горизонтальное выравнивание */
+  align-items: center; /* Выравнивание по вертикали */
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для аватара */
+.avatar img {
+  width: 65px; /* Размер аватара */
+  height: 65px;
+  object-fit: cover; /* Заполнение контейнера аватаром */
+  border-radius: 50%; /* Круглый аватар */
+  margin-right: 20px; /* Отступ между аватаром и данными */
+  position: relative; /* Устанавливаем относительное позиционирование */
+  top: 8px; /* Опускаем на 20px вниз */
+}
+
+/* Стили для данных пользователя */
+.user-details {
+  display: flex;
+  flex-direction: column; /* Данные идут друг под другом */
+  justify-content: center; /* Центрирование данных по вертикали */
+}
+
+/* Стиль для имени пользователя */
+.user-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: -3px;
+  color: #333;
+}
+
+/* Стиль для адреса пользователя */
+.user-address {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Стиль для возраста пользователя */
+.user-age {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Стили для шапки */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+}
+
+/* Кнопка выхода */
+.header__logout-button {
+  background-color: #888; /* Серебряный цвет фона */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: auto; /* Выравнивание кнопки справа */
+}
+
+/* Контейнер для поиска */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Инпут поиска */
+.search-input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+/* Контейнер для результатов */
+.results-container {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+/* Список результатов */
+.results-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Элемент списка */
+.result-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Стили для аватарки */
+.user-avatar {
+  width: 40px;  /* Уменьшаем аватарку */
+  height: 40px; /* Уменьшаем аватарку */
+  border-radius: 50%;
+  margin-right: 10px;  /* Отступ от аватарки до текста */
+  object-fit: cover;  /* Чтобы аватарка сохраняла пропорции и не выходила за пределы */
+}
+
+/* Стили для текста имени */
+.result-item strong {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+  .avatar-imgs {
+    width: 60px !important; /* Принудительная ширина */
+    height: 60px !important; /* Принудительная высота */
+    position: relative; /* Устанавливаем относительное позиционирование */
+    top: 8px; /* Опускаем на 20px вниз */
+  }
+
+
+  .avatar {
+    position: relative;
+    display: inline-block;
+}
+.avatar-plus {
+  position: absolute;
+  bottom: -3px; /* Сдвиг немного выше */
+  right: 22px; /* Сдвиг влево */
+  width: 13px; /* Уменьшаем размер */
+  height: 13px; /* Уменьшаем размер */
+  background-color: #1e90ff; /* Голубой цвет */
+  color: white;
+  font-size: 14px; /* Уменьшаем размер шрифта */
+  font-weight: bold;
+  text-align: center;
+  line-height: 13px; /* Выравниваем текст по центру внутри круга */
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
